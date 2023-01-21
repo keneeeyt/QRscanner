@@ -10,6 +10,148 @@ body {
     font-family: 'Outfit', sans-serif;
     font-size: 15px;
     background-color:hsl(212, 45%, 89%) ;
+    color:hsl(220, 15%, 55%);
+}
+.container-fluid{
+    width:100%;
+}
+.container {
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    margin:5rem 40% 5rem 40%;
+    border-radius: 1rem;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.img-fluid img {
+    margin-top:.3rem;
+    width:97%;
+    height:auto;
+    padding: .5em;
+    border-radius: 1rem;
+}
+.text-margin {
+    margin: .5rem 3.2rem .5rem 3.2rem;
+    padding-bottom: 2.5rem;
+    
+}
+h1 {
+    color:hsl(218, 44%, 22%);
+}
+.text-margin p {
+    margin-top: .8rem;
+    text-align: center;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* for mobile view */
+
+/* @media screen and (min-width:375px) {
+    .container{
+        text-align: center;
+        margin:1.3rem;
+    }
+    .img-fluid img {
+       width:320px;
+       height:auto;
+    }
+    .text-margin{
+        margin: .3rem 2rem .3rem 2rem;
+    }
+} */
+
+/* for larger screen
+
+@media screen and (min-width: 1440px) {
+    .container {
+        margin:5% 535px 5% 535px;
+    }
+    .img-fluid img{
+        width: 325;
+        height: auto;
+    }
+   
+} */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+   
+    .container{
+        margin:5% 460px 5% 460px;
+    }
+  
+  }
+
+  /* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .container{
+        margin:5% 330px 5% 330px;
+    }
+    
+  
+  }
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+     
+    .container{
+        margin:5% 205px 5% 205px;
+    }
+    
+  
+  }
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .container{
+        margin:5% 333px 5% 333px;
+    }
+  
+  }
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .container{
+        margin:5% 198px 5% 198px;
+    }
+  
+  }
+
+  /* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 375px) and (max-width: 480px) {
+
+    .container{
+        margin:5% 7px 5% 7px;
+    }
+  
+  }
